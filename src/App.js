@@ -1,31 +1,28 @@
 import React from 'react';
-import Navbar from './Navbar';
 import { Routes, Route, Link } from 'react-router-dom';
-import Menu from './menu/Menu';
-import All from './menu/All';
-import BestSeller from './menu/Bestseller';
-import './style.css';
-import List from './List';
 import { FaBars } from 'react-icons/fa'
 import { FaCaretDown } from 'react-icons/fa'
-import Home from './menu/home';
-import CustomerService from './menu/CustomerService';
-import TodayDeal from './menu/TodayDeal';
-import Prime from './menu/Prime';
-import NewRelease from './menu/NewRelease';
-import Music from './menu/Music';
-import KindleBook from './menu/KindleBook';
-import Books from './menu/Books';
-import Fashion from './menu/Fashion';
-import Electronics from './menu/Electronics';
-import ToyGame from './menu/ToyGame';
-import Slider from './menu/Slider';
+import Navbar from './components/navbar/Navbar';
+import Home from './components/menu/home';
+import All from './components/menu/All';
+import BestSeller from './components/menu/Bestseller';
+import CustomerService from './components/menu/CustomerService';
+import TodayDeal from './components/menu/TodayDeal';
+import Prime from './components/menu/Prime';
+import NewRelease from './components/menu/NewRelease';
+import Music from './components/menu/Music';
+import KindleBook from './components/menu/KindleBook';
+import Books from './components/menu/Books';
+import Fashion from './components/menu/Fashion';
+import Electronics from './components/menu/Electronics';
+import ToyGame from './components/menu/ToyGame';
+import "./style.css"
 
 const App = () => {
   return (
     <>
     <div className="main">
-      <Navbar />
+      <Navbar/>
 
       {/* menu list  */}
       <div className="menu">
@@ -115,9 +112,9 @@ const App = () => {
 
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home/>} />
         <Route path="all" element={<All />} />
-        <Route path="bestseller" element={<BestSeller />} />
+        <Route path="bestseller" element={<BestSeller/>} /> 
         <Route path="customer-service" element={<CustomerService />} />
         <Route path="today-deal" element={<TodayDeal />} />
         <Route path="prime" element={<Prime />} />

@@ -1,6 +1,6 @@
 import ComponentCategory from './CategoryComponent';
 import { useState } from 'react';
-import ItemCategoryList from '../ItemCategoryList';
+import ItemCategoryList from './ItemCategoryList';
 import SmartScreenList from './SmartScreenList';
 import "./ComponentCategory.css"
 

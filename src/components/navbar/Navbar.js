@@ -4,7 +4,7 @@ import { GoSearch } from "react-icons/go"
 import { FaMapMarkerAlt } from "react-icons/fa"
 import { FaCaretDown } from "react-icons/fa"
 import { MdOutlineShoppingCart } from "react-icons/md"
-import Amazonlogo from "./image/amazon logo.png"
+import Amazonlogo from "../image/amazon logo.png"
 import ReactCountryFlag from "react-country-flag"
 const Navbar = () => {
     return (
