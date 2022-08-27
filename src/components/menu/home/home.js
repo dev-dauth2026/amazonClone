@@ -1,16 +1,14 @@
 import react from 'react';
-import ItemCategory from '../components/categoryComponent/ItemCategory';
-import ItemCategoryDiv2 from '../components/categoryComponent/ItemCategoryDiv2';
-
-
+import ItemCategoryDiv2 from '../../categoryComponent/ItemCategoryDiv2';
+import ItemCategory from '../../categoryComponent/ItemCategory';
+import Slider from './Slider';
+import "./home.css";
 const home = () => {
     return (
         <>
             <div className="homeDiv">
                 <div className="itemCategoryDiv">
-                    
-                   <ItemCategory/>
-
+                    <ItemCategory />
                 </div>
                 {/* <div className="sliderDiv">
                     <Slider />

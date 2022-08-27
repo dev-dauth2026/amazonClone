@@ -3,7 +3,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa'
 import { FaCaretDown } from 'react-icons/fa'
 import Navbar from './components/navbar/Navbar';
-import Home from './components/menu/home';
+import Home from './components/menu/home/home';
 import All from './components/menu/All';
 import BestSeller from './components/menu/Bestseller';
 import CustomerService from './components/menu/CustomerService';
@@ -16,7 +16,7 @@ import Books from './components/menu/Books';
 import Fashion from './components/menu/Fashion';
 import Electronics from './components/menu/Electronics';
 import ToyGame from './components/menu/ToyGame';
-import "./style.css"
+import "./style.css";
 
 const App = () => {
   return (
