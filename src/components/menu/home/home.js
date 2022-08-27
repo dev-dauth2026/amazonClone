@@ -1,6 +1,6 @@
 import react from 'react';
-import ItemCategoryDiv2 from './categoryComponent/ItemCategoryDiv2';
-import ItemCategory from './categoryComponent/ItemCategory';
+import ItemCategoryDiv2 from './categoryComponent/itemCategory2/ItemCategoryDiv2';
+import ItemCategory from './categoryComponent/itemCategory1/ItemCategory';
 import Slider from './slider/Slider';
 import "./home.css";
 const home = () => {

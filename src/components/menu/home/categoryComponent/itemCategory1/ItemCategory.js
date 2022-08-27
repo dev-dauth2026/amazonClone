@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import ItemCategoryList from './ItemCategoryList';
-
+import "./itemCategory1.css";
 const ItemCategory = () => {
     const [items, setItems] = useState(ItemCategoryList);
     return (

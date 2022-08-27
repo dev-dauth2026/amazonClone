@@ -1,7 +1,7 @@
 import ComponentCategory from './CategoryComponent';
 import { useState } from 'react';
-import ItemCategoryList from './ItemCategoryList';
-import SmartScreenList from './SmartScreenList';
+import ItemCategoryList from '../itemCategory1/ItemCategoryList';
+import SmartScreenList from '../SmartScreenList';
 import "./ComponentCategory.css"
 
 const ItemCategoryDiv2 = () => {

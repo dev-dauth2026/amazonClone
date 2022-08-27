@@ -1,4 +1,4 @@
-import SmartScreenList from './SmartScreenList';
+import SmartScreenList from '../SmartScreenList';
 import { useState } from 'react';
 import ItemCategoryDiv2 from './ItemCategoryDiv2';
 const ComponentCategory = (ItemCategories) => {
