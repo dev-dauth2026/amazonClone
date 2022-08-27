@@ -2,7 +2,7 @@ const ItemCategoryList=[
     {
         id:1,
         title:'Trending deal',
-        image:'./categoryList/deal.jpg',
+        image:'./categoryList/laptop.jpg',
         imageTitle:'deal',
         linkTitle:'See more',
         link:'',
