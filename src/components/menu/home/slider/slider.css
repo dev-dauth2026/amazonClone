@@ -1,0 +1,56 @@
+/* home > slider  */
+.sliderDiv{
+    position: relative;
+    height: auto;
+    width: 100vw;  
+    background-color: rgb(206, 203, 203);
+    
+}
+
+article{
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: 0;
+    opacity: 0;
+    
+}
+
+.homeDiv .sliderDiv article img{
+    width: 100vw;
+    height: auto;
+    
+}
+
+
+article.activeSlide{
+    opacity: 1;
+   /* transform: translateX(0); */
+   transition: all 0.3s linear;
+}
+article.lastSlide{
+    /* transform: translateX(-100%); */
+    display: none;
+}
+
+.nextSlide{
+    /* transform: translateX(100%); */
+    display: none;
+}
+
+.arrow{
+    position: absolute;
+    top: 10rem;
+    font-size: 3rem;
+    border-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.leftArrow{
+    left:5rem;
+}
+
+.rightArrow{
+    right:5rem;
+}

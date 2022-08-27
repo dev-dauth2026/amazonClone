@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import SliderList from './SliderList';
 import {FaChevronRight} from 'react-icons/fa';
 import {FaChevronLeft} from 'react-icons/fa';
-
+import "./slider.css";
 
 
 const Slider = () => {

@@ -1,7 +1,7 @@
 import react from 'react';
-import ItemCategoryDiv2 from '../../categoryComponent/ItemCategoryDiv2';
-import ItemCategory from '../../categoryComponent/ItemCategory';
-import Slider from './Slider';
+import ItemCategoryDiv2 from './categoryComponent/ItemCategoryDiv2';
+import ItemCategory from './categoryComponent/ItemCategory';
+import Slider from './slider/Slider';
 import "./home.css";
 const home = () => {
     return (
