@@ -29,6 +29,7 @@ a{
     justify-content: space-between;
     color: white;
     padding:0.5rem 2rem;
+
 }
 
 .menu .leftMenu ul{
@@ -51,3 +52,8 @@ a{
 }
 
 
+@media only screen  and (max-width:1290px){
+    .menu .rightColumn{
+        display: none;
+    }
+}

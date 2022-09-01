@@ -1,16 +1,17 @@
 /* homeDiv > Category Item  */
 .homeDiv .itemCategoryDiv {
     position: absolute;
-    top: 20rem;
+    top: 50%;
     padding: 1rem;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     grid-template-areas: 
     "item1 item2 item3 item4"
     "item1 item2 item3 item5"
     "item6 item7 item8 item9";
     grid-gap:1rem;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-rows: minmax(200px,1fr);
     justify-content: space-evenly;
  
 }
@@ -99,19 +100,22 @@
     grid-area: item9;
 } 
 
-/* @media (max-width:1185px){
-    
-    .itemCategoryDiv .itemCategory4{
-        width: 100%;
-    } 
+
+ @media only screen  and (max-width:1255px){
+    .homeDiv .itemCategoryDiv{
+        grid-template-areas: 
+        "item1 item2 item3"
+        "item4 item4 item4"
+        "item5 item6 item7"
+        "item8 item9 ." 
+    }
     .itemCategoryDiv .itemCategory5 {
+        margin: 0;
         height:100%;
     }
-    
-    .itemCategoryDiv .itemCategory5 .itemImage {
-        height: 100%;
+    .itemCategoryDiv .itemCategory4{
+        grid-area: item4;
         width: 100%;
-        object-fit: cover;
-        align-self: center;
     }
-} */
+    
+} 

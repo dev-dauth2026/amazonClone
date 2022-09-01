@@ -38,17 +38,17 @@ article.lastSlide{
 
 .arrow{
     position: absolute;
-    top: 10rem;
-    font-size: 3rem;
+    top: 20%;
+    font-size: 3vw;
     border-color: black;
     color: white;
     cursor: pointer;
 }
 
 .leftArrow{
-    left:5rem;
+    left:10%;
 }
 
 .rightArrow{
-    right:5rem;
+    right:10%;
 }

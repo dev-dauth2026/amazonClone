@@ -134,3 +134,10 @@ h6 {
 .cartIcon {
     font-size: 2rem;
 }
+
+@media only screen and (max-Width:970px) {
+    .location {
+        display: none;
+    }
+    
+}
