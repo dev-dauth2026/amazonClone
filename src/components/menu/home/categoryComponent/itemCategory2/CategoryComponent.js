@@ -1,6 +1,6 @@
 import SmartScreenList from '../SmartScreenList';
 import { useState } from 'react';
-import ItemCategoryDiv2 from './ItemCategoryDiv2';
+import ItemCategory2 from './ItemCategory2';
 const ComponentCategory = (ItemCategories) => {
     const { id, title, image, imageTitle, link, linkTitle, children } = ItemCategories;
     const [smartScreens, setSmartScreens] = useState(SmartScreenList);

@@ -21,7 +21,7 @@ const Slider = () => {
     },[index,sliders]);
 
     return (
-        <>
+        <div className="sliderDiv">
            
                 {
                     sliders.map((slider, slideIndex) => {
@@ -36,6 +36,7 @@ const Slider = () => {
 
                         return (
                             <>
+                            
                             <article className={position} key={id}>
                                 <img src={image} alt={name} />
 
@@ -50,7 +51,7 @@ const Slider = () => {
         
         
             
-        </>
+            </div>
     )
 }
 export default Slider;

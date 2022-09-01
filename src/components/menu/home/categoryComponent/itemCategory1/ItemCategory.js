@@ -5,13 +5,13 @@ const ItemCategory = () => {
     const [items, setItems] = useState(ItemCategoryList);
     return (
         <>
-            
+            <div className="itemCategoryDiv">
                 {
                     items.map((item, itemIndex) => {
                         const { id,title, image, imageTitle, linkTitle, link } = item;
                         return (
                             <div className={ `itemCategory itemCategory${id}`} key={id}>
-                                <div className={`item${id}`}>
+                                <div className={`item item${id}`}>
                                 <h3>{title} </h3>
                                     <img src={image} alt={imageTitle} className="itemImage" />
                                     {
@@ -27,7 +27,7 @@ const ItemCategory = () => {
                         )
                     })
                 }
-            
+                </div>
         </>
     )
 }

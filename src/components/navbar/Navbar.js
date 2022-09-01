@@ -1,19 +1,17 @@
 import React from 'react';
-
 import { GoSearch } from "react-icons/go"
 import { FaMapMarkerAlt } from "react-icons/fa"
 import { FaCaretDown } from "react-icons/fa"
 import { MdOutlineShoppingCart } from "react-icons/md"
 import Amazonlogo from "../image/amazon logo.png"
 import ReactCountryFlag from "react-country-flag"
+import "./navbar.css";
 const Navbar = () => {
     return (
         <>
             <nav className='navbar' >
                 <div className="logoDiv">
                     <img src={Amazonlogo} alt="amazonlogo" className="logo" />
-
-
                 </div>
 
                 {/* location seletion */}
@@ -26,13 +24,16 @@ const Navbar = () => {
                 </div>
                 {/* search div  */}
                 <div className="searchdiv">
+                    {/* select button of Search  */}
                     <select className="selectButton">
                         <option value="All">All</option>
                         <option value="Nepal">Nepal</option>
                         <option value="Australia">Australia</option>
                         <option value="Canada">Canada</option>
                     </select>
+                    {/* input field  */}
                     <input type="search" className="search" />
+                    {/* search button  */}
                     <button className="searchButton">
                         <GoSearch className="searchIcon" />
                     </button>

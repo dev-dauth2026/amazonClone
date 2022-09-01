@@ -16,7 +16,7 @@ import Books from './components/menu/Books';
 import Fashion from './components/menu/Fashion';
 import Electronics from './components/menu/Electronics';
 import ToyGame from './components/menu/ToyGame';
-import "./style.css";
+import "./style.css"
 
 const App = () => {
   return (

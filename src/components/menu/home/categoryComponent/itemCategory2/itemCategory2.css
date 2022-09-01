@@ -1,6 +1,23 @@
+ 
+.homeDiv .itemCategoryDiv2 {
+    left: 0;
+    width: 95vw;
+    margin: 0;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "item1 item2 item3 item4"
+    ;
+    grid-gap: 1rem;
+    justify-content: center;
+    margin: auto;
+}
+ 
  .componentCategories{
     max-height: 25rem;
-    max-width: 20rem;
+    max-width: 25rem;
+    padding:1rem;
     object-fit: cover;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;

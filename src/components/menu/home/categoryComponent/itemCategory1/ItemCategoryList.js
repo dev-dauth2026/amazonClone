@@ -37,7 +37,39 @@ const ItemCategoryList=[
         imageTitle:'father day gift',
         linkTitle:'Shop now',
         link:'',
-    }
+    },
+    {
+        id:6,
+        title:"Top Deal",
+        image:'./categoryList/laptop.jpg',
+        imageTitle:'Laptop',
+        linkTitle:'Shop now',
+        link:'',
+    },
+    {
+        id:7,
+        title:"Deal on Kindle e-reader",
+        image:'./categoryList/tablet.jpg',
+        imageTitle:'tablet',
+        linkTitle:'Shop now',
+        link:'',
+    },
+    {
+        id:8,
+        title:"Deal on electronic Device",
+        image:'./categoryList/earpod.jpg',
+        imageTitle:'earpod',
+        linkTitle:'Shop now',
+        link:'',
+    },
+    {
+        id:9,
+        title:"New movies: Thirteen lives",
+        image:'./categoryList/movie.jpg',
+        imageTitle:'movie',
+        linkTitle:'Shop now',
+        link:'',
+    },
 ]
 
 export default ItemCategoryList;

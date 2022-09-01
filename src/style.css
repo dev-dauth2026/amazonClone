@@ -5,12 +5,9 @@
 }
 .main{
     position: relative;
-    width: 100vw;
-    height: auto;
-  
-   
+    display: flex;
+    flex-direction: column;
 }
-/* navbar  */
  ul li{
     list-style: none;
     list-style-type: none;
@@ -20,133 +17,6 @@
 a{
     text-decoration: none;
 }
-.navbar{
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(2,auto) 50% auto auto auto auto;
-    grid-gap:1rem;
-    align-items: center;
-    padding:0.3rem;
-    background-color: rgb(20, 28, 36); 
-    color:white;
-}
-.logoDiv{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.logo{
-    height: 3.3rem;
-    width:11rem;
-    align-self: center;
-}
-
-.location {
-    display: flex;
-    align-items: center;
-    padding: 0.1rem;
-}
-.location .map{
-    font-size: 1.2rem;
-    color: white;
-    align-self: flex-end;
-}
-.navbar ul li{
-    list-style: none;
-    list-style-type: none;
-}
-h6{
-    color: rgb(231, 225, 225);
-}
-/* search div  */
-.searchdiv{
-    
-    display: grid;
-    grid-template-columns: 0.5fr 10fr 0.5fr;
-    height: 1.5rem;
-    padding:0;
-    margin: 0;
-    width: 100%;
-    height: fit-content;
-}
-.searchdiv .selectButton{
-    
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-    background-color: lightgray;
-    width: 3.5rem;
-    text-align: center;
-    
-}
-
-.searchdiv input{
-    padding:0.2rem;
-    margin-right: 0 !important;
-    outline: none;
-    border: none;
-    
-}
-.searchdiv .searchButton{
-   
-    height: 2.5rem;
-    width: 3rem;    
-    background-color: rgb(245, 174, 67);
-    display: flex;
-    justify-content: center;
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-    margin-left: 0 !important;
-    outline: none;
-    border: none;
-    
-}
-
-.searchdiv .searchButton .searchIcon{
-    height: 2.5rem;
-    font-size: 1.3rem;
-    outline: none;
-    border: none;
-    
-    
-}
-.selectCountryDiv{
-    display: flex;
-    align-items: flex-end;
-
-}
-.selectCountry{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    align-self: flex-end;
-}
-.selectButton{
-    width: 1rem;
-}
-/* sign in Div  */
-.signinDiv {
-    display: flex;
-    flex-direction: column;
-  
-}
-
-.signinDiv .listDiv{
-    display: flex;
-    flex-direction: row;
-    align-items:flex-end;
-}
-
-/* cart div  */
-
-.cartDiv{
-    display: flex;
-    flex-direction: row;
-    align-items:flex-end;
-}
-
-.cartIcon{
-    font-size: 2rem;
-}
 
 /* menu  */
 
@@ -155,18 +25,15 @@ h6{
 }
 
 .menu{
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
     justify-content: space-between;
     color: white;
-    padding:0.5rem;
+    padding:0.5rem 2rem;
 }
 
 .menu .leftMenu ul{
-    display: grid;
-    grid-template-columns: repeat(13,auto);
-    grid-gap:1.5rem;
+    display: flex;
+    gap:1.5rem;
     justify-content: space-evenly;
 }
 

@@ -1,24 +1,22 @@
 /* home > slider  */
 .sliderDiv{
     position: relative;
-    height: auto;
-    width: 100vw;  
+    display: flex;
+    height: auto;  
     background-color: rgb(206, 203, 203);
     
 }
 
-article{
-    position: relative;
-    width: 100%;
+.sliderDiv article{
     height: auto;
-    left: 0;
     opacity: 0;
     
 }
 
-.homeDiv .sliderDiv article img{
-    width: 100vw;
+.sliderDiv article img{
+    width: 100%;
     height: auto;
+    object-fit: cover;
     
 }
 
