@@ -116,7 +116,9 @@ h6 {
     flex-direction: column;
 
 }
-
+.signinUserIcon{
+    display: none;
+}
 .signinDiv .listDiv {
     display: flex;
     flex-direction: row;
@@ -142,3 +144,13 @@ h6 {
     
 }
 
+@media only screen and (max-Width:835px){
+    .signinDiv, .selectCountry, .orderDiv{
+        display: none;
+    
+    }
+    .signinUserIcon{
+        display: flex;
+    }
+   
+}
