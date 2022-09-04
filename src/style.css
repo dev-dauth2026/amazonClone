@@ -1,59 +1,82 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.main{
+
+.main {
     position: relative;
     display: flex;
     flex-direction: column;
 }
- ul li{
+
+ul li {
     list-style: none;
     list-style-type: none;
     text-decoration: none;
     text-emphasis: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
 /* menu  */
 
-.menu{
+.menu {
     background-color: rgb(37, 42, 46);
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: space-between;
     color: white;
-    padding:0.5rem 2rem;
-
+    padding: 0.5rem 2rem;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: 0;
 }
-
-.menu .leftMenu ul{
+.menu::-webkit-scrollbar {
+    display: none;
+    width: 0;
+}
+.menu .leftMenu ul {
     display: flex;
-    gap:1.5rem;
-    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 1.5rem;
+    width: 100%;
 }
 
-.menu .leftMenu ul li{
-    font-size:14px;
+
+
+.menu .leftMenu ul li {
+    display: inline-block;
+    font-size: 14px;
     font-weight: bold;
     text-decoration: none !important;
     text-emphasis: none;
     text-anchor: unset;
+    width: fit-content;
+    word-break: keep-all;
+    flex-shrink: 0;
 }
 
-.menu .leftMenu ul li a{
+.menu .leftMenu ul li a {
     text-decoration: none;
     color: white;
 }
 
 
-@media only screen  and (max-width:1290px){
-    .menu .rightColumn{
+@media only screen and (max-width:1290px) {
+    .menu .rightColumn {
         display: none;
     }
 }
+
+/* @media only screen and (max-Width:1230px){
+    .main .leftMenu{
+        overflow-x: scroll;
+    }
+} */
