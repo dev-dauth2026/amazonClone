@@ -16,7 +16,7 @@
 }
 
 .itemCategoryDiv .itemCategory {
-    height: 25rem;
+    height: minmax(30rem,10rem);
     object-fit: stretch;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -117,4 +117,23 @@
         width: 100%;
     }
     
+    .itemCategoryDiv .item{
+        gap: 1rem;
+    }
+    
 } 
+
+@media only screen and (max-Width:845px){
+    /* .homeDiv .itemCategoryDiv{
+        grid-template-areas: 
+        "item1 item2"
+        "item3 item5"
+        "item4 item4"
+        "item6 item7"
+        "item8 item9"
+    } */
+
+    .itemCategoryDiv .item h3, .itemCategoryDiv .item p{
+        font-size: 1rem;
+    }
+}

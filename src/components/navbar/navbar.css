@@ -10,7 +10,10 @@
     background-color: rgb(20, 28, 36);
     color: white;
 }
-
+.navbar .menuIcon{
+    display: none;
+    font-size: 1.5rem;
+}
 .logoDiv {
     align-items: center;
 }
@@ -136,21 +139,37 @@ h6 {
 .cartIcon {
     font-size: 2rem;
 }
+.cartDiv .userIcon{
+    display: none;
+    font-size: 2rem;
+}
 
-@media only screen and (max-Width:970px) {
+@media only screen and (max-Width:995px) {
     .location {
         display: none;
     }
     
 }
 
-@media only screen and (max-Width:835px){
-    .signinDiv, .selectCountry, .orderDiv{
+@media only screen and (max-Width:845px){
+    .navbar{
+        padding-left:1rem;
+        padding-right: 1rem;
+        justify-content: space-between;
+    }
+    .signinDiv, .selectCountry, .orderDiv, .searchdiv, .cartDiv h5{
         display: none;
     
     }
-    .signinUserIcon{
+    .signinUserIcon,.navbar .menuIcon,.cartDiv .userIcon {
         display: flex;
+    }
+    .logoDiv{
+        display: flex;
+        flex-direction: row;
+    }
+    .cartDiv{
+        gap: 1rem;
     }
    
 }

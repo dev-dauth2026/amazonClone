@@ -2,16 +2,18 @@ import React from 'react';
 import { GoSearch } from "react-icons/go"
 import { FaMapMarkerAlt } from "react-icons/fa"
 import { FaCaretDown } from "react-icons/fa"
-import {FaUser} from "react-icons/fa"
+import { FaUser } from "react-icons/fa"
 import { MdOutlineShoppingCart } from "react-icons/md"
 import Amazonlogo from "../image/amazon logo.png"
 import ReactCountryFlag from "react-country-flag"
+import { FaBars } from "react-icons/fa"
 import "./navbar.css";
 const Navbar = () => {
     return (
         <>
             <nav className='navbar' >
                 <div className="logoDiv">
+                    <FaBars className="menuIcon" />
                     <img src={Amazonlogo} alt="amazonlogo" className="logo" />
                 </div>
 
@@ -42,16 +44,16 @@ const Navbar = () => {
                 {/* search div ends  */}
                 <div className="selectCountryDiv">
                     <div className="selectCountry">
-                    <ReactCountryFlag
-                        countryCode="US"
-                        svg
-                        style={{
-                            width: '1.5em',
-                            height: '1.5em',
-                        }}
-                        title="US"
-                    />
-                    <FaCaretDown />
+                        <ReactCountryFlag
+                            countryCode="US"
+                            svg
+                            style={{
+                                width: '1.5em',
+                                height: '1.5em',
+                            }}
+                            title="US"
+                        />
+                        <FaCaretDown />
                     </div>
 
                 </div>
@@ -63,13 +65,14 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="signinUserIcon">
-                <FaUser className="cartIcon"/>
+
                 </div>
                 <div className="orderDiv">
                     <h6>Returns</h6>
                     <h5>& Orders</h5>
                 </div>
                 <div className="cartDiv">
+                    <FaUser className="userIcon" />
                     <MdOutlineShoppingCart className="cartIcon" />
                     <h5>Cart</h5>
                 </div>
