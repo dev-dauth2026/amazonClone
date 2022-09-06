@@ -1,6 +1,7 @@
 /* navbar  */
 
 .navbar {
+    position: relative;
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -13,6 +14,7 @@
 .navbar .menuIcon{
     display: none;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 .logoDiv {
     align-items: center;
@@ -23,7 +25,39 @@
     width: 11rem;
     align-self: center;
 }
+.navbar .menuList{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding:1rem 0;
+    top: 5rem;
+    left: 2rem;
+    gap:1rem;
+    width: 250px;
+    background-color: white;
+    box-shadow: 3px 3px 5px gray;
+}
+ul li {
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    text-emphasis: none;
+}
 
+a {
+    text-decoration: none;
+}
+.navbar .menuList li{
+    padding:0.5rem 2rem;
+}
+.navbar .menuList li a{
+    text-decoration: none;
+    color: black;
+}
+.navbar .menuList li:hover{
+    background-color: lightblue;
+}
 .location {
     display: flex;
     align-items: center;

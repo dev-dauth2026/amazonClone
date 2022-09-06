@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
 import { FaMapMarkerAlt } from "react-icons/fa"
 import { FaCaretDown } from "react-icons/fa"
 import { FaUser } from "react-icons/fa"
@@ -9,12 +10,90 @@ import { FaBars } from "react-icons/fa"
 import "./navbar.css";
 import SearchBar from './SearchBar';
 const Navbar = () => {
+    const [toggle, setToggle] = useState(false);
     return (
         <>
             <nav className='navbar' >
                 <div className="logoDiv">
-                    <FaBars className="menuIcon" />
+                    <FaBars className="menuIcon" onClick={() => setToggle(!toggle)} />
                     <img src={Amazonlogo} alt="amazonlogo" className="logo" />
+                    {toggle?
+                    
+                    <ul className="menuList">
+                        
+
+                            <li>
+                                <Link to="all">
+                                     All
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="bestseller">
+                                    Best Seller
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="customer-service">
+                                    Customer Service
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="today-deal">
+                                    Today's Deals
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="prime">
+                                    Prime <FaCaretDown />
+                                </Link>
+                            </li>
+
+                            <li>
+                                <Link to="new-release">
+                                    New Releases
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="music">
+                                    Music
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="kindle-book">
+                                    Kindle Book
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="books">
+                                    Books
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="fashion">
+                                    Fashion
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="electronics">
+                                    Electronics
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/">
+                                    Home
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="toys-game">
+                                    Toys & Game
+                                </Link>
+                            </li>
+
+                        
+                    </ul>
+                    :null 
+                    }
+                    
                 </div>
 
                 {/* location seletion */}
