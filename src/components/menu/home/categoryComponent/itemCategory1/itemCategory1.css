@@ -106,7 +106,7 @@
         "item1 item2 item3"
         "item4 item4 item4"
         "item5 item6 item7"
-        "item8 item9 ." 
+        "item8 item9 ." ;
     }
     .itemCategoryDiv .itemCategory5 {
         margin: 0;
@@ -123,17 +123,37 @@
     
 } 
 
-@media only screen and (max-Width:845px){
-    /* .homeDiv .itemCategoryDiv{
+@media only screen and (max-Width:945px){
+    .homeDiv .itemCategoryDiv{
         grid-template-areas: 
         "item1 item2"
         "item3 item5"
         "item4 item4"
         "item6 item7"
         "item8 item9"
-    } */
+    }
 
     .itemCategoryDiv .item h3, .itemCategoryDiv .item p{
         font-size: 1rem;
+    }
+    .itemCategoryDiv .itemCategory .item .itemImage{
+        width: 20vw;
+    }
+}
+@media only screen and (max-Width:565px){
+    .homeDiv .itemCategoryDiv{
+        grid-template-areas: 
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5"
+        "item6"
+        "item7"
+        "item8"
+        "item9"
+    }
+    .itemCategoryDiv .itemCategory .item .itemImage{
+        width: 125px;
     }
 }
