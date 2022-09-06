@@ -4,6 +4,7 @@ import { FaMapMarkerAlt } from "react-icons/fa"
 import { FaCaretDown } from "react-icons/fa"
 import { FaUser } from "react-icons/fa"
 import { MdOutlineShoppingCart } from "react-icons/md"
+import {AiOutlineClose} from "react-icons/ai"
 import Amazonlogo from "../image/amazon logo.png"
 import ReactCountryFlag from "react-country-flag"
 import { FaBars } from "react-icons/fa"
@@ -18,10 +19,12 @@ const Navbar = () => {
                     <FaBars className="menuIcon" onClick={() => setToggle(!toggle)} />
                     <img src={Amazonlogo} alt="amazonlogo" className="logo" />
                     {toggle?
-                    
+                    <div className="toggleMenu">
                     <ul className="menuList">
-                        
-
+                            <div className="menuHeader">
+                            <img src={Amazonlogo} alt="amazonlogo" className="logo" />
+                            <FaUser className="menuUserIcon" />
+                            </div>
                             <li>
                                 <Link to="all">
                                      All
@@ -91,6 +94,10 @@ const Navbar = () => {
 
                         
                     </ul>
+                    <div className="cancle">
+                        <AiOutlineClose className="cancleIcon" onClick={()=>setToggle(!toggle)} />
+                    </div>
+                    </div>
                     :null 
                     }
                     
