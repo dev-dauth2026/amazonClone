@@ -1,5 +1,4 @@
 import React from 'react';
-import { GoSearch } from "react-icons/go"
 import { FaMapMarkerAlt } from "react-icons/fa"
 import { FaCaretDown } from "react-icons/fa"
 import { FaUser } from "react-icons/fa"
@@ -8,6 +7,7 @@ import Amazonlogo from "../image/amazon logo.png"
 import ReactCountryFlag from "react-country-flag"
 import { FaBars } from "react-icons/fa"
 import "./navbar.css";
+import SearchBar from './SearchBar';
 const Navbar = () => {
     return (
         <>
@@ -27,19 +27,7 @@ const Navbar = () => {
                 </div>
                 {/* search div  */}
                 <div className="searchdiv">
-                    {/* select button of Search  */}
-                    <select className="selectButton">
-                        <option value="All">All</option>
-                        <option value="Nepal">Nepal</option>
-                        <option value="Australia">Australia</option>
-                        <option value="Canada">Canada</option>
-                    </select>
-                    {/* input field  */}
-                    <input type="search" className="search" />
-                    {/* search button  */}
-                    <button className="searchButton">
-                        <GoSearch className="searchIcon" />
-                    </button>
+                    <SearchBar />
                 </div>
                 {/* search div ends  */}
                 <div className="selectCountryDiv">
@@ -77,6 +65,9 @@ const Navbar = () => {
                     <h5>Cart</h5>
                 </div>
             </nav>
+            <div className="searchdiv2">
+                <SearchBar />
+            </div>
 
         </>
     )

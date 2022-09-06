@@ -50,13 +50,18 @@ h6 {
     flex:1;
     display: flex;
 }
-
+.searchdiv2{
+    flex: 1;
+    display: none;
+    padding: 0.3rem;
+    background-color: rgb(20, 28, 36);
+}
 .searchdiv:hover{
     outline: 2px yellow solid;
     border-radius: 0.5rem;
 }
 
-.searchdiv .selectButton {
+.searchdiv .selectButton,.searchdiv2 .selectButton {
 
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
@@ -66,7 +71,7 @@ h6 {
 
 }
 
-.searchdiv input {
+.searchdiv input,.searchdiv2 input {
     flex: 1;
     padding: 0.2rem;
     margin-right: 0 !important;
@@ -75,7 +80,7 @@ h6 {
 
 }
 
-.searchdiv .searchButton {
+.searchdiv .searchButton,.searchdiv2 .searchButton {
     height: 2.5rem;
     width: 3rem;
     background-color: rgb(245, 174, 67);
@@ -87,7 +92,7 @@ h6 {
 
 }
 
-.searchdiv .searchButton .searchIcon {
+.searchdiv .searchButton .searchIcon,.searchdiv2 .searchButton .searchIcon {
     height: 2.5rem;
     font-size: 1.3rem;
     outline: none;
@@ -161,7 +166,7 @@ h6 {
         display: none;
     
     }
-    .signinUserIcon,.navbar .menuIcon,.cartDiv .userIcon {
+    .signinUserIcon,.navbar .menuIcon,.cartDiv .userIcon, .searchdiv2 {
         display: flex;
     }
     .logoDiv{

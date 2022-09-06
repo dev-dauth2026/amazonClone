@@ -17,6 +17,7 @@ import Fashion from './components/menu/Fashion';
 import Electronics from './components/menu/Electronics';
 import ToyGame from './components/menu/ToyGame';
 import "./style.css"
+import SearchBar from './components/navbar/SearchBar';
 
 const App = () => {
   return (
@@ -109,7 +110,7 @@ const App = () => {
 
 
       </div>
-
+      
 
       <Routes>
         <Route path="/" element={<Home/>} />
