@@ -26,23 +26,52 @@
     width: 11rem;
     align-self: center;
 }
-.navbar .toggleMenu{
+.navbar .toggleMenu, .navbar .toggleMenuOn{
     position: absolute;
     display: flex;
     flex-direction: row;
+    z-index: 1;
     top: 0;
     left:0;
-    z-index: 1;
     width: 100%;
+    transition: 0.7s all ease;
+    animation-name: animation;
 }
-.navbar .toggleMenu .menuHeader{
+.navbar .toggleMenu{
+    transform: translateX(-100%);
+}
+.navbar .toggleMenuOn{
+    
+    transform: translateX(0);
+}
+
+@keyframes animation{
+    0%{transform: translateX(-100%);}
+    25%{transform: translateX(-75%);}
+    50%{transform: translateX(-50%);}
+    75%{transform: translateX(-25%);}
+    100%{transform: translateX(0);}
+
+}
+.navbar  .menuHeader{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     padding: 1rem;
-    background-color: black;
+    background-color: rgb(20, 28, 36);
 }
-.navbar .toggleMenu .menuList .menuUserIcon{
+.navbar  .menuHeader .menuSignin{
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    gap:0.5rem
+}
+.navbar  .menuHeader .header{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+.navbar  .menuList .menuUserIcon{
     font-size: 2rem;
 }
 .navbar .menuList{
@@ -55,8 +84,9 @@
     height: 100vh;
     background-color: white;
     box-shadow: 3px 3px 5px gray;
+    overflow-y: scroll;
 }
-.navbar .toggleMenu .cancle{
+.navbar  .cancle{
     width: 20%;
     background-color: rgb(98, 98, 102);
     opacity: 0.8;
@@ -64,12 +94,12 @@
     justify-content: center;
     padding-top: 2rem;
 }
-.navbar .toggleMenu .cancle .cancleIcon{
+.navbar  .cancle .cancleIcon{
     font-size: 2rem;
     color: white;
     cursor: pointer;
 }
-.navbar .toggleMenu .cancle .cancleIcon:hover{
+.navbar  .cancle .cancleIcon:hover{
     transform: scale(1.5);
     transition: 0.5s all ease;
 }

@@ -4,7 +4,7 @@ import { FaMapMarkerAlt } from "react-icons/fa"
 import { FaCaretDown } from "react-icons/fa"
 import { FaUser } from "react-icons/fa"
 import { MdOutlineShoppingCart } from "react-icons/md"
-import {AiOutlineClose} from "react-icons/ai"
+import { AiOutlineClose } from "react-icons/ai"
 import Amazonlogo from "../image/amazon logo.png"
 import ReactCountryFlag from "react-country-flag"
 import { FaBars } from "react-icons/fa"
@@ -18,89 +18,95 @@ const Navbar = () => {
                 <div className="logoDiv">
                     <FaBars className="menuIcon" onClick={() => setToggle(!toggle)} />
                     <img src={Amazonlogo} alt="amazonlogo" className="logo" />
-                    {toggle?
-                    <div className="toggleMenu">
-                    <ul className="menuList">
-                            <div className="menuHeader">
-                            <img src={Amazonlogo} alt="amazonlogo" className="logo" />
-                            <FaUser className="menuUserIcon" />
-                            </div>
-                            <li>
-                                <Link to="all">
-                                     All
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="bestseller">
-                                    Best Seller
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="customer-service">
-                                    Customer Service
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="today-deal">
-                                    Today's Deals
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="prime">
-                                    Prime <FaCaretDown />
-                                </Link>
-                            </li>
-
-                            <li>
-                                <Link to="new-release">
-                                    New Releases
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="music">
-                                    Music
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="kindle-book">
-                                    Kindle Book
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="books">
-                                    Books
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="fashion">
-                                    Fashion
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="electronics">
-                                    Electronics
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/">
-                                    Home
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="toys-game">
-                                    Toys & Game
-                                </Link>
-                            </li>
-
-                        
-                    </ul>
-                    <div className="cancle">
-                        <AiOutlineClose className="cancleIcon" onClick={()=>setToggle(!toggle)} />
-                    </div>
-                    </div>
-                    :null 
-                    }
                     
+                        <div className={toggle?`toggleMenu`:`toggleMenuOn`}>
+                            <ul className="menuList">
+                                <div className="menuHeader">
+                                    <div className="menuSignin">
+                                        <h5>Sign in </h5>
+                                        <FaUser className="menuUserIcon" />
+                                    </div>
+                                    <div className="header">
+                                        <h4>Browse</h4>
+                                        <h2>Amazon</h2>
+                                    </div>
+                                </div>
+                                <li>
+                                    <Link to="all">
+                                        All
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="bestseller">
+                                        Best Seller
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="customer-service">
+                                        Customer Service
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="today-deal">
+                                        Today's Deals
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="prime">
+                                        Prime <FaCaretDown />
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link to="new-release">
+                                        New Releases
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="music">
+                                        Music
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="kindle-book">
+                                        Kindle Book
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="books">
+                                        Books
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="fashion">
+                                        Fashion
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="electronics">
+                                        Electronics
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/">
+                                        Home
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="toys-game">
+                                        Toys & Game
+                                    </Link>
+                                </li>
+
+
+                            </ul>
+                            <div className="cancle">
+                                <AiOutlineClose className="cancleIcon" onClick={() => setToggle(!toggle)} />
+                            </div>
+                        </div>
+                    
+                    
+
                 </div>
 
                 {/* location seletion */}
