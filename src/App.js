@@ -35,7 +35,7 @@ const App = () => {
 
             <li>
               <Link to="all">
-                <FaBars /> All
+                <FaBars className="allIcon"/> All
                 </Link>
             </li>
             <li>
