@@ -25,7 +25,7 @@ const Slider = () => {
             setIndex(index+1)
         },5000);
         return()=>{
-               clearInterval(slider);
+               clearInterval(slider);   
         }        
     },[index])
 
@@ -58,7 +58,9 @@ const Slider = () => {
             <FaChevronLeft className="arrow leftArrow"  onClick={()=>setIndex(index-1)} />
             <FaChevronRight className="arrow rightArrow" onClick={()=>setIndex(index+1)} />
         
-        
+        <div className="overlay">
+            
+        </div>
             
             </div>
     )

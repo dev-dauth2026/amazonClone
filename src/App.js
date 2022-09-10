@@ -105,7 +105,7 @@ const App = () => {
 
         {/* right menu  */}
         <div className="rightColumn">
-          <h4>Movies and TV Showes</h4>
+          <h4>Movies and TV Shows</h4>
         </div>
 
 
