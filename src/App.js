@@ -18,120 +18,125 @@ import Electronics from './components/menu/Electronics';
 import ToyGame from './components/menu/ToyGame';
 import "./style.css"
 import SearchBar from './components/navbar/SearchBar';
-
+import { FaMapMarkerAlt } from "react-icons/fa"
 const App = () => {
   return (
     <>
-    <div className="main">
-      <Navbar/>
+      <div className="main">
+        <Navbar />
 
-      {/* menu list  */}
-      <div className="menu">
+        {/* menu list  */}
+        <div className="menu">
 
 
-        {/* left menu  */}
-        <div className="leftMenu">
-          <ul className="menuItem">
+          {/* left menu  */}
+          <div className="leftMenu">
+            <ul className="menuItem">
 
-            <li>
-              <Link to="all">
-                <FaBars className="allIcon"/> All
+              <li>
+                <Link to="all">
+                  <FaBars className="allIcon" /> All
                 </Link>
-            </li>
-            <li>
-              <Link to="bestseller">
-                Best Seller
+              </li>
+              <li>
+                <Link to="bestseller">
+                  Best Seller
                 </Link>
-            </li>
-            <li>
-              <Link to="customer-service">
-                Customer Service
-            </Link>
-            </li>
-            <li>
-              <Link to="today-deal">
-                Today's Deals
-            </Link>
-            </li>
-            <li>
-              <Link to="prime">
-                Prime <FaCaretDown />
-              </Link>
-            </li>
+              </li>
+              <li>
+                <Link to="customer-service">
+                  Customer Service
+                </Link>
+              </li>
+              <li>
+                <Link to="today-deal">
+                  Today's Deals
+                </Link>
+              </li>
+              <li>
+                <Link to="prime">
+                  Prime <FaCaretDown />
+                </Link>
+              </li>
 
-            <li>
-              <Link to="new-release">
-                New Releases
-            </Link>
-            </li>
-            <li>
-              <Link to="music">
-                Music
-            </Link>
-            </li>
-            <li>
-              <Link to="kindle-book">
-                Kindle Book
-            </Link>
-            </li>
-            <li>
-              <Link to="books">
-                Books
-            </Link>
-            </li>
-            <li>
-              <Link to="fashion">
-                Fashion
-            </Link>
-            </li>
-            <li>
-              <Link to="electronics">
-                Electronics
-            </Link>
-            </li>
-            <li>
-              <Link to="/">
-                Home
-            </Link>
-            </li>
-            <li>
-              <Link to="toys-game">
-                Toys & Game
-            </Link>
-            </li>
+              <li>
+                <Link to="new-release">
+                  New Releases
+                </Link>
+              </li>
+              <li>
+                <Link to="music">
+                  Music
+                </Link>
+              </li>
+              <li>
+                <Link to="kindle-book">
+                  Kindle Book
+                </Link>
+              </li>
+              <li>
+                <Link to="books">
+                  Books
+                </Link>
+              </li>
+              <li>
+                <Link to="fashion">
+                  Fashion
+                </Link>
+              </li>
+              <li>
+                <Link to="electronics">
+                  Electronics
+                </Link>
+              </li>
+              <li>
+                <Link to="/">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="toys-game">
+                  Toys & Game
+                </Link>
+              </li>
 
-          </ul>
+            </ul>
+          </div>
+
+          {/* right menu  */}
+          <div className="rightColumn">
+            <h4>Movies and TV Shows</h4>
+          </div>
+
+
+        </div>
+        <div className="locationMin">
+          <FaMapMarkerAlt className="map" />
+          <h6>Hello</h6>
+            <h5>Select your address</h5>
         </div>
 
-        {/* right menu  */}
-        <div className="rightColumn">
-          <h4>Movies and TV Shows</h4>
-        </div>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="all" element={<All />} />
+          <Route path="bestseller" element={<BestSeller />} />
+          <Route path="customer-service" element={<CustomerService />} />
+          <Route path="today-deal" element={<TodayDeal />} />
+          <Route path="prime" element={<Prime />} />
+          <Route path="new-release" element={<NewRelease />} />
+          <Route path="music" element={<Music />} />
+          <Route path="kindle-book" element={<KindleBook />} />
+          <Route path="books" element={<Books />} />
+          <Route path="fashion" element={<Fashion />} />
+          <Route path="electronics" element={<Electronics />} />
+          <Route path="toys-game" element={<ToyGame />} />
+        </Routes>
+
+
 
 
       </div>
-      
-
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="all" element={<All />} />
-        <Route path="bestseller" element={<BestSeller/>} /> 
-        <Route path="customer-service" element={<CustomerService />} />
-        <Route path="today-deal" element={<TodayDeal />} />
-        <Route path="prime" element={<Prime />} />
-        <Route path="new-release" element={<NewRelease />} />
-        <Route path="music" element={<Music />} />
-        <Route path="kindle-book" element={<KindleBook />} />
-        <Route path="books" element={<Books />} />
-        <Route path="fashion" element={<Fashion />} />
-        <Route path="electronics" element={<Electronics />} />
-        <Route path="toys-game" element={<ToyGame />} />
-      </Routes>
-      
-
-
-
-    </div>
     </>
   )
 }

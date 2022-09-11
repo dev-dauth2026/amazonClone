@@ -92,14 +92,29 @@ a {
     outline: 0.05rem solid white;
     padding: 0.3rem;
 }
-
+.locationMin{
+    display: none;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.4rem;
+    background-color: rgb(123, 128, 133);
+}
 
 @media only screen and (max-width:1290px) {
     .menu .rightColumn {
         display: none;
     }
 }
-
+@media only screen and (max-Width:1155px) {
+    
+    .locationMin{
+        display: flex;
+        
+    }
+    
+}
 /* @media only screen and (max-Width:1230px){
     .main .leftMenu{
         overflow-x: scroll;

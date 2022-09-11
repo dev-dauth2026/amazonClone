@@ -19,7 +19,7 @@ const Navbar = () => {
                     <FaBars className="menuIcon" onClick={() => setToggle(!toggle)} />
                     <img src={Amazonlogo} alt="amazonlogo" className="logo" />
                     
-                        <div className={toggle?`toggleMenu`:`toggleMenuOn`}>
+                        <div className={toggle?`toggleMenuOn`:`toggleMenu`}>
                             <ul className="menuList">
                                 <div className="menuHeader">
                                     <div className="menuSignin">

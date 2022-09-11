@@ -32,11 +32,11 @@
 /* toggle menu  */
 .navbar .toggleMenu, .navbar .toggleMenuOn{
     position: absolute;
-    display: flex;
     flex-direction: row;
-    z-index: 1;
+    display: flex;
     top: 0;
     left:0;
+    z-index: 1;
     width: 100%;
     transition: 0.7s all ease;
     animation-name: animation;
@@ -272,21 +272,31 @@ h6 {
     display: none;
     font-size: 2rem;
 }
+.locationMin{
+    display: none;
+}
 
 @media only screen and (max-Width:1155px) {
     .location {
         display: none;
     }
+    .locationMin{
+        display: flex;
+    }
     
 }
-
+@media only screen and (max-Width:955px){
+    .selectCountry, .orderDiv{
+        display: none;
+    }
+}
 @media only screen and (max-Width:845px){
     .navbar{
         padding-left:1rem;
         padding-right: 1rem;
         justify-content: space-between;
     }
-    .signinDiv, .selectCountry, .orderDiv, .searchdiv, .cartDiv h5{
+    .signinDiv,   .searchdiv, .cartDiv h5{
         display: none;
     
     }
