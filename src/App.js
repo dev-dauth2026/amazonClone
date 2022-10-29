@@ -113,7 +113,7 @@ const App = () => {
         <div className="locationMin">
           <FaMapMarkerAlt className="map" />
           <h6>Hello</h6>
-            <h5>Select your address</h5>
+          <h5>Select your address</h5>
         </div>
 
 

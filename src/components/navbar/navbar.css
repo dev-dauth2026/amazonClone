@@ -272,9 +272,7 @@ h6 {
     display: none;
     font-size: 2rem;
 }
-.locationMin{
-    display: none;
-}
+
 
 @media only screen and (max-Width:1155px) {
     .location {

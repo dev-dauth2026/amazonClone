@@ -16,6 +16,7 @@ const SliderList=[
         name:'signin',
         image:'../assets/signin.jpg',
     },
+   
 
 
 ];

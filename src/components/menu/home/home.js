@@ -9,7 +9,8 @@ const home = () => {
             <div className="homeDiv">
                     <Slider />            
                     <ItemCategory />            
-                    {/* <ItemCategory2/> */}         
+                    {/* <ItemCategory2/> */}   
+                       
             </div>
         </>
     )

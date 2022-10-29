@@ -4,9 +4,10 @@
     height: 50vw;  
     background-color: rgb(206, 203, 203);
     overflow: hidden; 
+    isolation: isolate;
     
 }
-.sliderDiv::after{
+.overlay::after{
     content:' ';
     position:absolute;
     left:0;
@@ -58,6 +59,7 @@ article.nextSlide{
     border-color: black;
     color: white;
     cursor: pointer;
+    z-index: 1;
 }
 
 .leftArrow{
