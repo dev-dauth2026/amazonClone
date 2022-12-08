@@ -7,97 +7,112 @@ import { FaChevronRight } from "react-icons/fa"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/scrollbar";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+// import required modules
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const SliderCategory = () => {
-    const [sliderItems, setSliderItems] = useState(SliderItemList);
-    // let box = document.querySelector('.sliderCategoryList');
+  const [sliderItems, setSliderItems] = useState(SliderItemList);
+  // let box = document.querySelector('.sliderCategoryList');
 
-    // const prevBtn = () => {
-    //     let width = box.clientWidth;
-    //     box.scrollLeft = box.scrollLeft - width;
-    //     console.log(width);
-    //     console.log(box.scrollLeft);
-    // }
-    // const nextBtn = () => {
-    //     let width = box.clientWidth;
-    //     box.scrollLeft = box.scrollLeft + width;
-    //     console.log('rightbtn')
-    //     console.log(box.scrollLeft)
-    // }
-    const settings = {
-       
-        infinite: true,
-        speed: 500,
-        slidesToShow: 6,
-        slidesToScroll: 6,
-        initialSlide: 0,
-        swipeToSlide: true,
-        dots:true,
+  // const prevBtn = () => {
+  //     let width = box.clientWidth;
+  //     box.scrollLeft = box.scrollLeft - width;
+  //     console.log(width);
+  //     console.log(box.scrollLeft);
+  // }
+  // const nextBtn = () => {
+  //     let width = box.clientWidth;
+  //     box.scrollLeft = box.scrollLeft + width;
+  //     console.log('rightbtn')
+  //     console.log(box.scrollLeft)
+  // }
+  // const settings = {
+  //     dots: false,
+  //     infinite: false,
+  //     speed: 500,
+  //     slidesToShow: 7,
+  //     slidesToScroll: 7,
+  //     initialSlide: 0,
+  //     swipe:true,
+  //     scroll:true,
+  //     responsive: [
+  //       {
+  //         breakpoint: 1024,
+  //         settings: {
+  //           slidesToShow: 3,
+  //           slidesToScroll: 3,
+  //           infinite: true,
+  //           dots: true
+  //         }
+  //       },
+  //       {
+  //         breakpoint: 600,
+  //         settings: {
+  //           slidesToShow: 2,
+  //           slidesToScroll: 2,
+  //           initialSlide: 2
+  //         }
+  //       },
+  //       {
+  //         breakpoint: 480,
+  //         settings: {
+  //           slidesToShow: 1,
+  //           slidesToScroll: 1
+  //         }
+  //       }
+  //     ]
+  //   };
 
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    swipeToSlide: true,
-                    dots:true,
+  return (
+    <div className="sliderCategory">
+    <h3>Frequently Purchased in Personal care</h3>
+      <div className="sliderCategoryList">
+        {/* <Slider {...settings}> */}
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={20}
+          slidesPerView={7}
+          slidesPerGroup= {7}
+          navigation
+          scrollbar={{ draggable: true }}
+          onSlideChange={() => console.log('slide change')}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
+          {
+            sliderItems.map((sliderItem, itemIndex) => {
+              const { id, title, image, imageTitle, linkTitle, link } = sliderItem;
+              return (
+                <>
+                  <SwiperSlide>
+                    <div key={id} className='sliderItem'>
+                      <img src={image} alt={imageTitle} />
+                    </div>
+                  </SwiperSlide>
+                </>
+              )
+            })
+          }
+        </Swiper>
+        {/* </Slider> */}
+      </div>
 
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2,
-                    swipeToSlide: true,
-                    dots:true,
+      {/* <FaChevronLeft className="arrow leftArrow" onClick={prevBtn}
+      />
+      <FaChevronRight className="arrow rightArrow" onClick={nextBtn} /> */}
 
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    draggable: true,
-                    dots:true,
-                }
-            }
-        ]
-    };
-
-    return (
-        <div className="sliderCategory">
-        <h2 className="sliderCategory1">Trending Items for International markets</h2>
-            
-                <Slider {...settings}>
-                    {
-                        sliderItems.map((sliderItem, itemIndex) => {
-                            const   { id, title, image, imageTitle, linkTitle, link } = sliderItem;     
-
-
-                            return (
-                                <>
-                                    <div key={id} className='sliderItem'>
-                                        <img src={image} alt={imageTitle} />
-                                    </div>
-                                </>
-                            )
-                        })
-                    }
-                </Slider>
-        
-
-            {/* <FaChevronLeft className="arrow leftArrow" onClick={prevBtn}
-             />
-            <FaChevronRight className="arrow rightArrow" onClick={nextBtn} /> */}
-
-
-        </div>
-
-    )
+    </div>
+  )
 }
 export default SliderCategory;
