@@ -5,6 +5,7 @@ import SliderCategory from '../../sliderCategoryComponent/SliderCategory';
 import SliderCategory2 from '../../sliderCategoryComponent2/SliderCategory2';
 import Item from './Item';
 import TodayDealSlider from '../../todayDealSliderComponent/TodayDealSlider';
+import Sponsored1 from '../../sponsoredComponent1/Sponsored1';
 const ItemCategory = () => {
     const [items, setItems] = useState(ItemCategoryList);
     return (
@@ -20,6 +21,7 @@ const ItemCategory = () => {
                 <SliderCategory/>  
                 <SliderCategory2/>
                 <TodayDealSlider/>
+                <Sponsored1/>
                 </div>
         </>
     )

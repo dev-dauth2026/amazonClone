@@ -12,7 +12,8 @@
     "item6 item7 item8 item9"
     "slider1 slider1 slider1 slider1"
     "slider2 slider2 slider2 slider2"
-    "slider3 slider3 slider3 slider3";
+    "slider3 slider3 slider3 slider3"
+    "sponsored sponsored sponsored sponsored";
     grid-gap:1rem;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     justify-content: space-evenly;

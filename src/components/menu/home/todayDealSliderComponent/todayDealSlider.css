@@ -52,7 +52,7 @@
   .TodayDealSliderItem{
     padding-bottom: 1.5rem;
   }
-  .TodayDealSliderItem>p,.deal>p{
+  .TodayDealSliderItem>p,.deal>p{   
     font-size: 14px;
   }
   .TodayDealSliderItem .deal{
