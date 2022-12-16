@@ -1,10 +1,9 @@
 .sponsored1{
-    display: grid;
     grid-area: sponsored;
     width: 100%;
+    display: flex;
     justify-content: center;
-    margin: 5px;
 }
 .sponsored1 img{
-    max-width:1000px;
+    max-width:80%;
 }

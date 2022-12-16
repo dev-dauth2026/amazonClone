@@ -1,0 +1,43 @@
+.ItemCategory3List{
+    grid-area: ItemCategory3List;
+    width: 100%;
+    gap:1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ItemCategory3List .itemList, .discountCategory{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 350px;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.discountCategory .discount, .discountCategory .householdCategory{
+    max-width: 350px;
+}
+.discountCategory .discount img,.discountCategory .householdCategory img, .ItemCategory3List .itemList img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.ItemCategory3List .discountCategory .householdCategory{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+    
+}
+/* .ItemCategory3List .item1{
+    grid-area: category3item1;
+}
+
+.ItemCategory3List .item2{
+    grid-area: category3item2;
+}
+.ItemCategory3List .item3{
+    grid-area: category3item3;
+} */
