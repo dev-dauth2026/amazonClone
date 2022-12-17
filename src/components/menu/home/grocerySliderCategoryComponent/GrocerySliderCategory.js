@@ -15,6 +15,7 @@ const GrocerySliderCategory = () => {
     const [groceryItemList, setGroceryItemList] = useState(GroceryItemList);
     return (
         <div className="GrocerySliderCategory">
+        <h3>Frequently repurchased in Grocery</h3>
             <Swiper
                 // install Swiper modules
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
