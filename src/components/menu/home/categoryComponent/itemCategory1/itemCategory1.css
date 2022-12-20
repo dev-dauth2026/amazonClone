@@ -15,7 +15,9 @@
     "slider3 slider3 slider3 slider3"
     "sponsored sponsored sponsored sponsored"
     "ItemCategory3List ItemCategory3List ItemCategory3List  ItemCategory3List"
-    "GrocerySliderCategory GrocerySliderCategory GrocerySliderCategory GrocerySliderCategory";
+    "GrocerySliderCategory GrocerySliderCategory GrocerySliderCategory GrocerySliderCategory"
+    "RelatedItemCategory RelatedItemCategory RelatedItemCategory RelatedItemCategory"
+    "ItemCategory4Component ItemCategory4Component ItemCategory4Component ItemCategory4Component";
     grid-gap:1rem;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     justify-content: space-evenly;
@@ -58,6 +60,7 @@
     grid-area: item3;
 }
 .itemCategoryDiv .itemCategory4{
+    grid-area: item4;
     display: flex;
     justify-content: center;
     align-items: center;

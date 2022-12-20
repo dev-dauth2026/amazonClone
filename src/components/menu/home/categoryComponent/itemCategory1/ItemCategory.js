@@ -7,7 +7,9 @@ import Item from './Item';
 import TodayDealSlider from '../../todayDealSliderComponent/TodayDealSlider';
 import Sponsored1 from '../../sponsoredComponent1/Sponsored1';
 import ItemCategory3 from '../../itemCategory3/ItemCategory3';
+import ItemCategory4Component from '../../itemCategoryComponent4/ItemCategory4Component';
 import GrocerySliderCategory from '../../grocerySliderCategoryComponent/GrocerySliderCategory';
+import RelatedItemCategory from '../../relatedItemCategoryComponent/RelatedItemCategory';
 const ItemCategory = () => {                
     const [items, setItems] = useState(ItemCategoryList);
     return (
@@ -26,6 +28,9 @@ const ItemCategory = () => {
                 <Sponsored1/>
                 <ItemCategory3/>
                 <GrocerySliderCategory/>
+                <RelatedItemCategory/>
+                <ItemCategory4Component/>
+                
                 </div>
         </>
     )
