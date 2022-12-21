@@ -1,7 +1,7 @@
 const ItemCategory4List=[
     {
         id:1,
-        name:'Amazon Beauty Advent Calendar 2022',
+        name:'Amazon Advent Calendar 2022',
         img:'./categoryList/beauty-event-calendar.jpg',
         discount:'',
         link:'Shop Now',

@@ -8,17 +8,20 @@ const ItemCategory4Component = () => {
     return (
         <div className="itemCategory4Component">
             <div className="smartSolutionItems">
-                {
-                    smartItems.map((smartItem, ItemIndex) => {
-                        const { id, name, img } = smartItem;
-                        return (
-                            <div className="smartItem" key={id}>
-                                <img src={img} alt={name} />
-                                <p>{name} </p>
-                            </div>
-                        )
-                    })
-                }
+                <h3>Smart Solution for your home</h3>
+                <div className="smartItemDiv">
+                    {
+                        smartItems.map((smartItem, ItemIndex) => {
+                            const { id, name, img } = smartItem;
+                            return (
+                                <div className="smartItem" key={id}>
+                                    <img src={img} alt={name} />
+                                    <p>{name} </p>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
                 <p> <a href="">Explore all</a></p>
             </div>
             <div className="Category4Items">
@@ -29,7 +32,7 @@ const ItemCategory4Component = () => {
                             <div className="category4Item" key={id}>
                                 <h3>{name} </h3>
                                 <img src={img} alt={name} />
-                                <p><span>{discount} </span> </p>
+                                <p className="discount"><span style={{backgroundColor:'#c50303',color:'white',padding: '2px 5px',borderRadius: '5px'}}>{discount} </span> </p>
                                 <p><a href="">{link} </a> </p>
                             </div>
                         )
