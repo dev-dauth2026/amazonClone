@@ -32,7 +32,8 @@ const ItemCategory4Component = () => {
                             <div className="category4Item" key={id}>
                                 <h3>{name} </h3>
                                 <img src={img} alt={name} />
-                                <p className="discount"><span style={{backgroundColor:'#c50303',color:'white',padding: '2px 5px',borderRadius: '5px'}}>{discount} </span> </p>
+                                {discount?<p className="discount"><span style={{backgroundColor:'#c50303',color:'white',padding: '2px 5px',borderRadius: '5px'}}>{discount} </span> </p>:null}
+                                
                                 <p><a href="">{link} </a> </p>
                             </div>
                         )

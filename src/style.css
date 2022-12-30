@@ -20,7 +20,12 @@ ul li {
 a {
     text-decoration: none;
 }
-
+a{
+    color: rgb(89, 170, 197);
+}
+a:hover{
+    color: rgb(213, 147, 147);
+}
 /* menu  */
 
 .menu {

@@ -10,6 +10,7 @@ import ItemCategory3 from '../../itemCategory3/ItemCategory3';
 import ItemCategory4Component from '../../itemCategoryComponent4/ItemCategory4Component';
 import GrocerySliderCategory from '../../grocerySliderCategoryComponent/GrocerySliderCategory';
 import RelatedItemCategory from '../../relatedItemCategoryComponent/RelatedItemCategory';
+import CustomerViewed from '../../customerViewedComponent/CustomerViewed';
 const ItemCategory = () => {                
     const [items, setItems] = useState(ItemCategoryList);
     return (
@@ -30,6 +31,7 @@ const ItemCategory = () => {
                 <GrocerySliderCategory/>
                 <RelatedItemCategory/>
                 <ItemCategory4Component/>
+                <CustomerViewed/>
                 
                 </div>
         </>
