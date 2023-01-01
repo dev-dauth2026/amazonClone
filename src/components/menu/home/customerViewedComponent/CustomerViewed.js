@@ -15,7 +15,7 @@ const CustomerViewed = () => {
     const [customerViewedItems, setCustomerViewedItems] = useState(CustomerViewedList);
     return (
         <div className="customerViewed">
-        <h3>Customers who viewed items in your browsing history also viewed</h3>
+            <h3>Customers who viewed items in your browsing history also viewed</h3>
             <Swiper
                 // install Swiper modules
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -24,28 +24,33 @@ const CustomerViewed = () => {
                 slidesPerGroup={5}
                 navigation
                 pagination={{
-                    
+
                     e1: "swiper-pagination",
-                    type:"fraction"
+                    type: "fraction"
                     // formatFractionCurrent(currentNumber),
                     // formatFractionTotal(totalNumber)
                 }}
-                
+
                 scrollbar={{ draggable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
             >
-            {/* {formatFractionCurrent} of {formatFractionTotal} */}
-            
+                {/* {formatFractionCurrent} of {formatFractionTotal} */}
+
                 {
                     customerViewedItems.map((customerViewedItem, ItemIndex) => {
                         const { id, img, name, rating, price, delivery, offer } = customerViewedItem;
+                        let stars='';
+                        for (let i = 0; i < rating; i++) {
+                            stars+="⭐";
+                        }
+                        
                         return (
                             <SwiperSlide>
                                 <div className="customerViewedItem" key={id}>
                                     <img src={img} alt={name} />
                                     <h4><a href="">{name}</a> </h4>
-                                    <p>{rating}</p>
+                                    <p>{stars}</p>
                                     <p><strong>${price.toFixed(2)} </strong><small>(${price.toFixed(2)}/count)</small></p>
                                     <p><small>Get it as soon as <strong>{delivery}</strong></small></p>
                                     <small>{offer}</small>
@@ -54,7 +59,7 @@ const CustomerViewed = () => {
                         )
                     })
                 }
-         
+
             </Swiper>
         </div>
     )

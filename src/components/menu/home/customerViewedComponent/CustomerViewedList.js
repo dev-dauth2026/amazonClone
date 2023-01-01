@@ -3,7 +3,7 @@ const CustomerViewedList = [
         id:1,
         img:'./categoryList/customer-toothbrush1.jpg',
         name:"Philips Sonicare ProtectiveClean 4300 Standard Sonic Electric Toothbrush with Built-in Pressure Sensor",
-        rating:4,
+        rating:3,
         price:89.00,
         delivery:'Thursday December 29',
         offer:'FREE Delivery on orders over $39 shipped by Amazon'
@@ -12,7 +12,7 @@ const CustomerViewedList = [
         id:2,
         img:'./categoryList/customer-toothbrush1.jpg',
         name:"Philips Sonicare ProtectiveClean 4300 Standard Sonic Electric Toothbrush with Built-in Pressure Sensor",
-        rating:4,
+        rating:2,
         price:89.00,
         delivery:'Thursday December 29',
         offer:'FREE Delivery on orders over $39 shipped by Amazon'
@@ -21,7 +21,7 @@ const CustomerViewedList = [
         id:3,
         img:'./categoryList/customer-toothbrush1.jpg',
         name:"Philips Sonicare ProtectiveClean 4300 Standard Sonic Electric Toothbrush with Built-in Pressure Sensor",
-        rating:4,
+        rating:2,
         price:89.00,
         delivery:'Thursday December 29',
         offer:'FREE Delivery on orders over $39 shipped by Amazon'
@@ -30,7 +30,7 @@ const CustomerViewedList = [
         id:4,
         img:'./categoryList/customer-toothbrush1.jpg',
         name:"Philips Sonicare ProtectiveClean 4300 Standard Sonic Electric Toothbrush with Built-in Pressure Sensor",
-        rating:4,
+        rating:1,
         price:89.00,
         delivery:'Thursday December 29',
         offer:'FREE Delivery on orders over $39 shipped by Amazon'
@@ -48,7 +48,7 @@ const CustomerViewedList = [
         id:6,
         img:'./categoryList/customer-toothbrush1.jpg',
         name:"Philips Sonicare ProtectiveClean 4300 Standard Sonic Electric Toothbrush with Built-in Pressure Sensor",
-        rating:4,
+        rating:5,
         price:89.00,
         delivery:'Thursday December 29',
         offer:'FREE Delivery on orders over $39 shipped by Amazon'
@@ -57,7 +57,7 @@ const CustomerViewedList = [
         id:7,
         img:'./categoryList/customer-toothbrush1.jpg',
         name:"Philips Sonicare ProtectiveClean 4300 Standard Sonic Electric Toothbrush with Built-in Pressure Sensor",
-        rating:4,
+        rating:1,
         price:89.00,
         delivery:'Thursday December 29',
         offer:'FREE Delivery on orders over $39 shipped by Amazon'
@@ -66,7 +66,7 @@ const CustomerViewedList = [
         id:8,
         img:'./categoryList/customer-toothbrush1.jpg',
         name:"Philips Sonicare ProtectiveClean 4300 Standard Sonic Electric Toothbrush with Built-in Pressure Sensor",
-        rating:4,
+        rating:2,
         price:89.00,
         delivery:'Thursday December 29',
         offer:'FREE Delivery on orders over $39 shipped by Amazon'
@@ -75,7 +75,7 @@ const CustomerViewedList = [
         id:9,
         img:'./categoryList/customer-toothbrush1.jpg',
         name:"Philips Sonicare ProtectiveClean 4300 Standard Sonic Electric Toothbrush with Built-in Pressure Sensor",
-        rating:4,
+        rating:3,
         price:89.00,
         delivery:'Thursday December 29',
         offer:'FREE Delivery on orders over $39 shipped by Amazon'
