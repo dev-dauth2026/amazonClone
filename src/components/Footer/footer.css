@@ -1,0 +1,76 @@
+.footerDiv{
+    grid-area:footerDiv ;
+    flex-direction: column;
+    grid-gap: 0 !important;
+    
+
+}
+.footerDiv .backToTopToggler{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: rgb(227, 227, 227);
+    font-weight: bolder;
+    background-color: rgb(40, 61, 69);
+}
+
+.footerDiv .footerLink{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    padding: 3rem;
+    background-color: rgb(20, 40, 49);
+    color: rgb(207, 207, 207);
+}
+.footerDiv .footerLink>div{
+    display: flex;
+    flex-direction: column;
+    
+}
+.footerDiv .footerLink li,.footerDiv .footerLink h4{
+    margin-bottom: 0.5rem;
+}
+.footerDiv .footerLink li{
+    font-size: 14px;
+
+}
+
+.footerDiv .branches{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    color: rgb(227, 227, 227);
+    background-color:rgb(20, 40, 49);
+    border-top: 0.5px solid rgb(131, 134, 135,0.5);
+}
+
+.footerDiv .branches .branchesList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+}
+.footerDiv .branches .branchesList small{
+    margin-right: 0.5rem;
+}
+
+.footerDiv .copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: aliceblue;
+    background-color:rgb(16, 30, 36) ;
+}
+.footerDiv .copyright .policies{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}

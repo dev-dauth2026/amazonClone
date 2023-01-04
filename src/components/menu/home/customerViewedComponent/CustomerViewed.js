@@ -11,6 +11,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import PersonalizedSignIn from "./PersonalizedSignIn";
 const CustomerViewed = () => {
     const [customerViewedItems, setCustomerViewedItems] = useState(CustomerViewedList);
     return (
@@ -30,8 +31,6 @@ const CustomerViewed = () => {
                     // formatFractionCurrent(currentNumber),
                     // formatFractionTotal(totalNumber)
                 }}
-
-                scrollbar={{ draggable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
             >
@@ -61,6 +60,7 @@ const CustomerViewed = () => {
                 }
 
             </Swiper>
+            <PersonalizedSignIn/>
         </div>
     )
 }
